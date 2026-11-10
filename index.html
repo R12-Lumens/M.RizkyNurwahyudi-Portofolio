@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M. Rizky Nurwahyudi | Portofolio</title>
+<meta name="description" content="Portofolio M. Rizky Nurwahyudi, mahasiswa Teknik Informatika: web, IoT, dan otomasi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="#home">RIZKY</a>
+  <button class="burger" aria-label="Buka menu" aria-expanded="false"><span></span><span></span></button>
+  <nav id="menu">
+    <a href="#home" class="active">Beranda</a>
+    <a href="#about">Tentang</a>
+    <a href="#skills">Keahlian</a>
+    <a href="#projects">Proyek</a>
+    <a href="#contact">Kontak</a>
+  </nav>
+  <a class="btn btn-fill nav-cta" href="#contact">Hubungi Saya</a>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-text">
+    <p class="hi">Halo, saya</p>
+    <h2 class="name">M. Rizky Nurwahyudi</h2>
+    <h1>Web Developer<br>&amp; IoT Builder</h1>
+    <p class="lead">Mahasiswa Teknik Informatika semester 3. Saya membuat website, sistem monitoring jaringan, dan perangkat ESP32 yang benar-benar dipakai.</p>
+    <div class="socials">
+      <a href="https://github.com/username" aria-label="GitHub" target="_blank" rel="noopener">GH</a>
+      <a href="https://linkedin.com/in/username" aria-label="LinkedIn" target="_blank" rel="noopener">in</a>
+      <a href="https://instagram.com/username" aria-label="Instagram" target="_blank" rel="noopener">IG</a>
+    </div>
+    <div class="actions">
+      <a class="btn btn-fill" href="#contact">Hubungi Saya</a>
+      <a class="btn btn-line" href="cv.pdf" download>Unduh CV</a>
+    </div>
+    <dl class="stats">
+      <div><dt>Semester 3</dt><dd>Teknik Informatika</dd></div>
+      <div><dt>6+</dt><dd>Proyek dibuat</dd></div>
+      <div><dt>3</dt><dd>Bidang: Web, IoT, Jaringan</dd></div>
+    </dl>
+  </div>
+  <div class="hero-photo">
+    <div class="circle"></div>
+    <img id="foto" src="foto.png" alt="Foto M. Rizky Nurwahyudi">
+  </div>
+</section>
+
+<section id="about" class="sec">
+  <h2 class="title">Tentang Saya</h2>
+  <div class="about-grid">
+    <p>Saya Rizky, mahasiswa Teknik Informatika semester 3. Saya suka mengubah ide menjadi sesuatu yang bisa dipakai: dari aplikasi chat anonim, dasbor monitoring router, sampai gantungan kunci pintar dengan layar TFT.</p>
+    <p>Di kampus saya belajar matematika diskrit, aljabar linear, struktur data, dan basis data. Di luar kelas saya aktif di organisasi mahasiswa dan mengerjakan proyek pribadi di bidang web, IoT, dan otomasi.</p>
+  </div>
+</section>
+
+<section id="skills" class="sec">
+  <h2 class="title">Keahlian</h2>
+  <div class="skills">
+    <div class="skill-group"><h3>Web</h3><ul><li>HTML &amp; CSS</li><li>JavaScript</li><li>Node.js &amp; Socket.io</li><li>Laravel</li></ul></div>
+    <div class="skill-group"><h3>IoT &amp; Hardware</h3><ul><li>ESP32 &amp; ESP8266</li><li>Layar TFT SPI</li><li>PlatformIO</li></ul></div>
+    <div class="skill-group"><h3>Jaringan &amp; Otomasi</h3><ul><li>MikroTik</li><li>n8n</li><li>Bot Telegram</li><li>Linux (Fedora)</li></ul></div>
+    <div class="skill-group"><h3>Data &amp; Desain</h3><ul><li>Basis data</li><li>Google Sheets</li><li>UI/UX dasar</li><li>Fotografi &amp; video</li></ul></div>
+  </div>
+</section>
+
+<section id="projects" class="sec">
+  <h2 class="title">Proyek</h2>
+  <div class="filters" role="group" aria-label="Filter proyek">
+    <button class="chip on" data-f="all">Semua</button>
+    <button class="chip" data-f="web">Web</button>
+    <button class="chip" data-f="iot">IoT</button>
+    <button class="chip" data-f="auto">Otomasi</button>
+  </div>
+  <div class="projects">
+    <article class="project" data-c="web">
+      <h3>Aplikasi Chat Anonim</h3>
+      <p>Chat real-time untuk organisasi mahasiswa, tanpa perlu menampilkan identitas pengirim.</p>
+      <p class="tags">Node.js · Socket.io</p>
+      <a href="#" target="_blank" rel="noopener">Lihat proyek</a>
+    </article>
+    <article class="project" data-c="web">
+      <h3>Monitoring Trafik MikroTik</h3>
+      <p>Dasbor untuk memantau trafik router dan mendeteksi anomali jaringan.</p>
+      <p class="tags">Laravel · MikroTik</p>
+      <a href="#" target="_blank" rel="noopener">Lihat proyek</a>
+    </article>
+    <article class="project" data-c="web">
+      <h3>Website Lumensky Studio</h3>
+      <p>Website studio foto dan video, saat ini sedang dirombak UI/UX-nya.</p>
+      <p class="tags">HTML · CSS · JavaScript</p>
+      <a href="https://lumensky-studio.vercel.app" target="_blank" rel="noopener">Kunjungi website</a>
+    </article>
+    <article class="project" data-c="auto">
+      <h3>Bot Catatan Keuangan</h3>
+      <p>Catat pengeluaran lewat Telegram, data otomatis masuk ke Google Sheets.</p>
+      <p class="tags">n8n · Telegram · Google Sheets</p>
+      <a href="#" target="_blank" rel="noopener">Lihat proyek</a>
+    </article>
+    <article class="project" data-c="iot">
+      <h3>Gantungan Kunci Pintar</h3>
+      <p>Gantungan kunci dengan layar TFT 1,8 inci yang memutar animasi dan pixel art.</p>
+      <p class="tags">ESP32 · TFT SPI · PlatformIO</p>
+      <a href="#" target="_blank" rel="noopener">Lihat proyek</a>
+    </article>
+    <article class="project" data-c="iot">
+      <h3>Layar Pesan ESP8266</h3>
+      <p>Perangkat dengan layar TFT yang menampilkan pesan dan gambar yang diunggah lewat web.</p>
+      <p class="tags">ESP8266 · TFT · Web server</p>
+      <a href="#" target="_blank" rel="noopener">Lihat proyek</a>
+    </article>
+  </div>
+</section>
+
+<section id="contact" class="sec contact">
+  <h2 class="title">Mari Bekerja Sama</h2>
+  <p class="lead">Terbuka untuk magang, proyek kolaborasi, dan pekerjaan lepas.</p>
+  <div class="actions">
+    <a class="btn btn-fill" href="mailto:email@contoh.com">Kirim Email</a>
+    <a class="btn btn-line" href="https://wa.me/6281234567890" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+</section>
+</main>
+
+<footer>© <span id="yr"></span> M. Rizky Nurwahyudi</footer>
+<script src="script.js"></script>
+</body>
+</html>
